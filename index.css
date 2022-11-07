@@ -1,11 +1,14 @@
-/*======= Font rengini #3C373B yapan bir yeni bir universal selector yaratın*/
-
+/*======= Font rengini #3C373B yapan bir yeni bir universal selector yaratın*/ // universal selector bişey belirtilmemişse color bu renk olacak diyor.
+* {
+color:#3C373B
+}
 
 h1 {
   font-family: 'Gaegu', cursive;
   margin: 20px 0;
-  /*=======  Font size'ı 60px yapın ve text'i ortalayın(center) */
-  font-size: 10px;
+ /*=======  Font size'ı 60px yapın ve text'i ortalayın(center) */
+  font-size: 60px;
+  text-align:center
 }
 
 h2, h3, h4, h5, h6 {
@@ -13,8 +16,9 @@ h2, h3, h4, h5, h6 {
   margin-bottom: 0;
   padding: 0 10px;
   /*=======  Font size'ı 30px yapın*/
-  font-size: 10px;
+  font-size: 30px;
 }
+
 
 /*======= Sayfadaki TÜM p tag'leri için aşağıdaki özellikleri içeren bir selector yaratın:
 
@@ -29,8 +33,22 @@ line-height: 1.4;
 /*======= Sayfadaki TÜM imajlar için aşağıdaki özellikleri içeren bir selector yaratın:
 
   border-radius: 10px;
-
 */
+.gray_background {
+  background:#F5F5F5 ;
+
+}
+.ortalama {
+  width: 45%;
+  display: inline-block; 
+}
+img {
+  border-radius: 40px; /* yanları bombeleştirdi*/
+  width:100% /* sayfanın boyutuna*/
+}
+
+
+
 
 .content-row {
   display: flex;
@@ -40,12 +58,13 @@ line-height: 1.4;
   /*======= margin propery yaratın.  Değerini 20px olarak atayın*/
 }
 
-.container {
+.container {  /*// class olduğunda nokta*/
   /*======= width property yaratın. Değerini 605px olarak atayın */
   margin: 0 auto;
+  width: 750px;
 }
 
-.container header nav a {
+ .container header nav a {     /* //container = farklı inç ekranlarına uyumlu olması için ?? container ı neden sildik,varken çalışmadı? */
   margin: 0 10px;
   border: 1px solid lightgray;
   padding: 20px;
@@ -55,7 +74,7 @@ line-height: 1.4;
   text-decoration: none;
   margin-bottom: 20px;
    /*======= background property yaratın. Değerini #E79947 olarak atayınız.*/
-  
+  background: #E79947
 }
 
 .container header nav a:hover {
